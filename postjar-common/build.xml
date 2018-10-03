@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="postjar-common" default="default" basedir=".">
+	<description>Builds, tests, and runs the project postjar-common.</description>
+	<import file="nbproject/build-impl.xml"/>
+
+	<target name="-post-jar">
+		<echo message="-post-jar"/>
+		<jar destfile="${dist.jar}" update="true">
+			<manifest>
+				<attribute name="MyApp-version" value="123"/>
+			</manifest>
+		</jar>
+	</target>
+
+</project>
